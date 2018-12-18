@@ -29,6 +29,7 @@
 - [Consul Connect](consul.md)：来自Consul
 - [Kong](kong.md)：Kong到底想不想做Service Mesh？
 - [Nginmesh](nginmesh.md)：来自Nginx的Service Mesh项目
+- [AWS App Mesh](asw.md): 来自Amazon AWS
 
 国外的Service Mesh的衍生产品，底层支撑，或者外围支持：
 
@@ -47,7 +48,7 @@
 - [Mesher](mesher.md)：华为CSE Mesher的开源产品
 - [Tencent Service Mesh](tencent.md): 腾讯Service Mesh产品
 
-国外的Service Mesh的衍生产品，底层支撑，或者外围支持：
+国内的Service Mesh的衍生产品，底层支撑，或者外围支持：
 
 - [Naftis](naftis.md)：来自小米的Isito管理面板
 - [Istio-ui](istio-ui.md)：Istio的简易UI
