@@ -12,3 +12,9 @@ Mesher脱身于华为的公有云产品CSE，CSE本身拥有java与go语言的�
 在生产中得到了验证后，
 华为在8月份开源了自己的 [Service Mesh](https://github.com/go-mesh/mesher)，
 以完善ServiceComb开源生态
+
+从发展目标来看，Mesher并不只支持Kubernetes，
+而是支持任意的基础设施，容器，虚拟机等
+并且影响了ServiceComb Service Center的走向，使其支持异构的注册中心（目前已支持纳管
+service center与kubernetes）管理，可以统一的在一个service center中发现不同基础设施，
+不同数据中心的微服务，以此来更好的支持混合云场景
