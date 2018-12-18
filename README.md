@@ -32,15 +32,20 @@
 - [Consul Connect](input/consul.md)：来自Consul
 - [Kong](input/kong.md)：Kong到底想不想做Service Mesh？
 - [Nginmesh](input/nginmesh.md)：来自Nginx的Service Mesh项目
-- [Aspen Mesh](input/aspenmesh.md): F5 出品的Istio商业版本
-- [AWS App Mesh](input/aws.md): 来自Amazon AWS
+- [Aspen Mesh](input/aspenmesh.md): F5 出品的Istio商业版本，未开源
+- [AWS App Mesh](input/aws.md): 来自Amazon AWS，未开源
 
 国外的Service Mesh的衍生产品，底层支撑，或者外围支持：
 
-- [Ambassador](input/ambassador.md)：基于Envoy的API Gateway
-- [Gloo](input/gloo.md)：基于Envoy的API Gateway
 - [Cillium](input/cillium.md)：可以和Istio/Envoy一起使用的网络解决方案
 - [Kiali](input/kiali.md)：Istio的控制台UI
+
+Envoy的衍生产品：
+
+- [Rotor](input/rotor.md): Envoy的轻量级控制平面，来自Turbine Labs，已经不再维护
+- [Ambassador](input/ambassador.md)：基于Envoy的API Gateway
+- [Gloo](input/gloo.md)：基于Envoy的API Gateway
+- [Contour](input/contour.md): 基于Envoy的Kubernetes Ingress Controller
 
 国内的Service Mesh产品：
 
@@ -55,3 +60,4 @@
 
 - [Naftis](input/naftis.md)：来自小米的Isito管理面板
 - [Istio-ui](input/istio-ui.md)：Istio的简易UI
+
