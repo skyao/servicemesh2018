@@ -21,19 +21,22 @@
 国外部分，目前主要的service mesh产品：
 
 - [Istio](input/istio.md)：来自Google/IBM/Lyft，目前最主流的Service Mesh项目
-- [Istioi平台支持](input/istio-flatform.md)：对Istio提供支持的各主流云平台介绍
+- [Istioi平台支持](input/istio-platform.md)：对Istio提供支持的各主流云平台介绍
 - [Envoy](input/envoy.md)：来自Lyft的数据平面，也是Istio默认的数据平面
 - [Conduit](input/conduit.md)：来自Buoyant，已经转为Linkerd2
 - [Linkerd](input/linkerd.md)：来自Buoyant，业界第一个Service Mesh项目
 - [Linkerd2](input/linkerd2.md)：来自Buoyant
+
+各家Network厂商也开始尝试Service Mesh：
+
 - [Consul Connect](input/consul.md)：来自Consul
 - [Kong](input/kong.md)：Kong到底想不想做Service Mesh？
 - [Nginmesh](input/nginmesh.md)：来自Nginx的Service Mesh项目
-- [AWS App Mesh](input/asw.md): 来自Amazon AWS
+- [Aspen Mesh](input/aspenmesh.md): F5 出品的Istio商业版本
+- [AWS App Mesh](input/aws.md): 来自Amazon AWS
 
 国外的Service Mesh的衍生产品，底层支撑，或者外围支持：
 
-- [Aspen Mesh](input/aspenmesh.md): F5 出品的Istio商业版本
 - [Ambassador](input/ambassador.md)：基于Envoy的API Gateway
 - [Gloo](input/gloo.md)：基于Envoy的API Gateway
 - [Cillium](input/cillium.md)：可以和Istio/Envoy一起使用的网络解决方案
