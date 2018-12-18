@@ -43,7 +43,7 @@
 - [SOFAMosn](sofamosn.md)：蚂蚁金服的数据平面
 - [SOFAMesh](sofamesh.md)：蚂蚁金服的控制平面，基于Istio
 - [Motan Mesh](motanmesh.md)：新浪微博的ServiceMesh产品
-- [Dubbo Mesh](dubbomesh.md)](motanmesh.md)：阿里Dubbo的Service Mesh方案
+- [Dubbo Mesh](dubbomesh.md)：阿里Dubbo的Service Mesh方案
 - [Mesher](mesher.md)：华为CSE Mesher的开源产品
 - [Tencent Service Mesh](tencent.md): 腾讯Service Mesh产品
 
