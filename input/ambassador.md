@@ -1,7 +1,7 @@
 
 ## ambassador
 
-作为构建于envoy之上的API网关，定位于kubernetes的ingress gateway的一种。
+作为构建于envoy之上的API网关，与同类产品的差异在于它是可本地部署的轻量级微服务网关,并提供规则动态配置的能力。
 2018年随着envoy的飞速发展，ambassador也在抓紧孵化中，共发布了31个版本，每次都紧追着envoy的新版本进行，并可支持与istio集成，作为service mesh架构中的微服务ingress gateway进行部署。
 
 ## 总结
