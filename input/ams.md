@@ -1,5 +1,6 @@
 
 1	ASM
+
 华为云应用网格服务ASM(Application Service Mesh)基于Istio构建。提供高性能、高可靠性、高可维护性的企业级网格服务平台。
 2018年8月28日,华为云中国行上成都站上,宣布作为国内首家推出了Istio服务网格产品对外发布,并正式公测。
 
@@ -8,9 +9,11 @@ AMS深度集成华为云容器服务CCE(Cloud Container Engine)，一键开启�
 
 
 2	Azure Service Fabric Mesh 
+
 Azure Service Fabric Mesh 于2018年7月开放公测。是一个完全托管的服务，开发者可部署微服务应用程序，而无需管理虚拟机、存储或网络。开发人员察觉不到所有的群集操作。 只需上传代码，并指定所需的资源、可用性要求和资源限制即可。其中使用Envoy做智能路由管理。
 
 3	Google
+
 2018年7月 google Next上提出了Cloud Services Platform。与Istio相关的包括：
 Managed Istio 提供服务发现和智能流量管理、安全、监控。也是对Istio官方提出的功能定位的概况。当然强调了和自身云服务的结合，如可观察性上强调和StackDriver的集成。在Kubernetes集群上安装了Istio，可以通过命令行工具配置DestinationRule、VirtualService等Istio规则可以通过StackDriver看服务的metric、调用链、拓扑。
 
