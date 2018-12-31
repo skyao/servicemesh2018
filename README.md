@@ -4,6 +4,8 @@
 
 此次，邀请了Service Mesh社区的一众好友共襄盛举，希望能为Service Mesh2018年的发展做一个系统而全面的总结。特此鸣谢！
 
+预览地址：[Service Mesh2018年度总结](./servicemesh2018.md)
+
 参与者名单：
 
 - 敖小剑
