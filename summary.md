@@ -75,6 +75,13 @@ Envoy的稳健和成熟，在2018年带来了丰硕成果：
 
 - Envoy的xDS API，已经成为service mesh数据平面API的事实标准
 
+Envoy在2018年的成功，还体现在社区开始出现基于Envoy的衍生产品：
+
+- Ambassador：构建于envoy之上的API Gateway，紧追着envoy的新版本，支持与Istio集成，可作为service mesh架构中的ingress gateway。
+- Gloo：基于Envoy的Hybrid App Gateway，可作为Kubernetes  ingress controler 和API gateway，来自 solo.io。
+- Rotor: Envoy的轻量级控制平面，来自Turbine Labs（由于Turbine Labs的公司变动，这个项目已经不再维护）。
+- Contour: 基于Envoy的Kubernetes Ingress Controller，来自 Heptio 公司
+
 在2017年的总结中，我们对Envoy的评价是：
 
 > Envoy随后收获了属于它的殊荣：
