@@ -41,6 +41,7 @@
 目前各主流云平台也纷纷提供对 Istio 的支持：
 
 - TODO
+- Maistra：2018年9月，Red Hat的OpenShift Service Mesh技术预览版上线，基于Istio。Red Hat是Istio项目的早期采用者和贡献者，希望将Istio正式成为OpenShift平台的一部分。Red Hat为OpenShift上的Istio开始了一个技术预览计划，为现有的OpenShift Container Platform客户提供在其OpenShift集群上部署和使用Istio平台的能力。目前Red Hat正在与上游Istio社区合作，以帮助推进Istio框架，按照Red Hat的惯例，围绕Istio的工作也是开源的。为此Red Hat创建了一个名为Maistra的社区项目。
 
 在市场一片红红火火之时，我们不得不指出，到2018年底，Istio 依然在几个关键领域上未能给出足够令人满意的答案，典型如性能、稳定性，Istio 的 1.0 版本并不是一个有足够生产强度的稳定版本。Istio在2018年交出的答案，对于对Istio抱有非常大期待的 Servicemesh 社区来说，是远远不够的。这直接导致 Istio 目前在生产落地上陷入尴尬境地：虽然试水 Istio 的公司非常多，但是真正大规模的实践很少。
 
