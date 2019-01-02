@@ -17,7 +17,7 @@ AMS深度集成华为云容器服务CCE(Cloud Container Engine)，一键开启�
 
 Azure Service Fabric Mesh 于2018年7月开放公测。是一个完全托管的服务，开发者可部署微服务应用程序，而无需管理虚拟机、存储或网络。开发人员察觉不到所有的群集操作。 只需上传代码，并指定所需的资源、可用性要求和资源限制即可。其中使用Envoy做智能路由管理。
 
-（TODO图 	Azure Service Fabric Mesh 架构）
+	![](https://blog.tomkerkhove.be/content/images/2018/07/Traffic-Routing.png)
 
 3	Google
 
@@ -25,7 +25,7 @@ Azure Service Fabric Mesh 于2018年7月开放公测。是一个完全托管的�
 
 Managed Istio 提供服务发现和智能流量管理、安全、监控。也是对Istio官方提出的功能定位的概况。当然强调了和自身云服务的结合，如可观察性上强调和StackDriver的集成。在Kubernetes集群上安装了Istio，可以通过命令行工具配置DestinationRule、VirtualService等Istio规则可以通过StackDriver看服务的metric、调用链、拓扑。
 
-（TODO 图 CSP）
+![](https://3.bp.blogspot.com/-0PF8lTgs2mc/W1ZeqBT0wAI/AAAAAAAAGHo/SirNgEV8SAQuepeZjrhRtdqi3t7abzyxgCLcBGAs/s1600/The%2BCloud%2BServices%2BPlatform%2Bfamily.png)
 
 Apigee API Management for Istio。通过Apigee定义控制策略，基于Istio的Mixer的策略执行对每请求的控制，如Quota、Oath等。
 
