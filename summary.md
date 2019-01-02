@@ -4,7 +4,7 @@
 
 在2017年年底，在Service Mesh刚刚兴起之时，应InfoQ的邀请撰写过一篇名为 ["Service Mesh年度总结：群雄逐鹿烽烟起"](https://skyao.io/publication/201801-service-mesh-2017-summary/) 的文章，对2017年Service Mesh的发展做了一次年度回顾。当时正是Service Mesh技术方兴未艾，各家产品你争我夺之时，一片欣欣向荣的气象。
 
-时隔一年，江湖风云变幻。再次有幸收到InfoQ的邀请，继续进行Service Mesh 2018年的年度总结。本次年度总结将由来自 [Servicemesher 社区](http://www.servicemesher.com/) 的多位嘉宾共襄盛举，希望能为 Service Mesh 2018年的发展做一个系统而全面的总结。
+时隔一年，江湖风云变幻。再次有幸收到InfoQ的邀请，继续进行Service Mesh 2018年的年度总结。本次年度总结将由来自 [ServiceMesher 社区](http://www.servicemesher.com/) 的多位嘉宾共襄盛举，希望能为 Service Mesh 2018年的发展做一个系统而全面的总结。
 
 为了更有成效的完成总结，我们将以询问的方式来让下文中将出场的各个Service Mesh产品和解决方案提供自己的答案，问题很简单：**在2018年，做了什么？**
 
@@ -16,36 +16,36 @@
 
 ### Istio
 
-2018年对于 Istio 来说应该是蓄势待发的一年，这一年 Istio 接连发布了 0.5、0.6、0.7、0.8 和 1.0 版本。
+2018年对于Istio来说应该是蓄势待发的一年，这一年Istio接连发布了 0.5、0.6、0.7、0.8 和 1.0 版本。
 
-到2018 年 7 月 31日 1.0 GA 时，Istio其实已经陆续开发了近两年。1.0 版本对 Istio 来说是一个重要的里程碑，官方宣称所有的核心功能现在都可以用于生产。1.0 版本的到来也意味着其基本架构和 API 逐渐稳定，那些锐意创新的企业可以开始试用。
+到2018年7月31日 1.0 GA 时，Istio其实已经陆续开发了近两年。1.0版本对Istio来说是一个重要的里程碑，官方宣称所有的核心功能现在都可以用于生产。1.0版本的到来也意味着其基本架构和API逐渐稳定，那些锐意创新的企业可以开始试用。
 
-我们以 GitHub 上的 Star 数量的角度来看一下 Istio 在2018年的受欢迎程度，下图显示的是 Istio 的 GitHub star 数量随时间变化曲线。可以看到在2018年，Istio 的star 数量增长了大概一万颗，目前已经接近15000颗星，其增长趋势非常平稳。
+我们以GitHub上的star数量的角度来看一下 Istio 在2018年的受欢迎程度，下图显示的是Istio的GitHub star数量随时间变化曲线。可以看到在2018年，Istio 的star数量增长了大概一万颗，目前已经接近15000颗星，其增长趋势非常平稳。
 
 [![Stargazers over time](https://starcharts.herokuapp.com/istio/istio.svg)](https://starcharts.herokuapp.com/istio/istio)
 
-我们来按照时间顺序回顾一下2018年 Istio 的几个重要版本的发布情况，以便对 Istio 这个目前最受关注的 Service Mesh 项目在2018年的发展有深入了解：
+我们来按照时间顺序回顾一下2018年Istio的几个重要版本的发布情况，以便对Istio这个目前最受关注的Service Mesh项目在2018年的发展有深入了解：
 
-- 2018年1月31日，Istio发布0.5.0版本：支持Sidecar自动注入（需要 kubernets 1.9版本），加强RBAC支持，尝试修改通信规则
-- 2018年3月1日，Istio发布0.6.0版本：支持发送自定义Envoy配置给Proxy，支持基于Redis的速率限制，容许为检查和报告分别设置Mixer集群，提供正式的存活以及就绪检测功能
+- 2018年1月31日，Istio发布0.5.0版本：支持Sidecar自动注入（需要 Kubernetes 1.9及以上版本），加强RBAC支持，尝试修改通信规则。
+- 2018年3月1日，Istio发布0.6.0版本：支持发送自定义Envoy配置给Proxy，支持基于Redis的速率限制，容许为检查和报告分别设置Mixer集群，提供正式的存活以及就绪检测功能。
 - 2018年3月29日，Istio发布0.7.0版本：只包含问题修复和性能提升，没有新的功能。初步支持 v1alpha3 版本的流量管理功能。
-- 2018年6月1日，**Istio发布0.8.0版本**：在之前三个平淡无奇的小版本发布之后，Istio 迎来了2018年第一个重大版本0.8.0，这也是 Istio 第一个LTS（长期支持）版本，这个版本带来了大量的更新，架构方面也做了很多改进，主要有：v1alpha3 版本的流量管理功能就绪；缺省使用 Envoy 的 ADS API 进行配置发送；新增 Istio Gateway 模型，不再支持 Kubernetes Ingress；支持Helm 安装；支持按需安装 Mixer 和 Citadel 模块。另外原有的 API 都经过了重构，CRD 的名字全部更改。
-- 2018年7月31日，**Istio发布1.0.0版本**：这是社区期待已经的版本，也是 Istio 的重要里程碑。不过相对0.8.0版本，主要是修复错误和提高性能，新功能不多。
+- 2018年6月1日，**Istio发布0.8.0版本**：在之前三个平淡无奇的小版本发布之后，Istio 迎来了2018年第一个重大版本0.8.0，这也是 Istio 第一个LTS（长期支持）版本，这个版本带来了大量的更新，架构方面也做了很多改进，主要有：v1alpha3 版本的流量管理功能就绪；缺省使用 Envoy 的 ADS API 进行配置发送；新增 Istio Gateway模型，不再支持Kubernetes Ingress；支持Helm 安装；支持按需安装Mixer和Citadel模块。另外原有的 API 都经过了重构，CRD 的名字全部更改。
+- 2018年7月31日，**Istio发布1.0.0版本**：这是社区期待已久的版本，也是 Istio 的重要里程碑。不过相对0.8.0版本，主要是修复错误和提高性能，新功能不多。
 
-进入2018年下半年之后，Istio 的开发进度明显放缓，1.1版本的发布多次推迟，直到2018年结束也未能发布。在1.0版本发布之后的5个月时间，Istio只是以平均每个月一个Patch版本的方式陆续发布了1.0.1到1.0.5总共5个Patch版本，这些Patch版本都只有错误修复和性能改善，未带来新的特性。
+进入2018年下半年之后，Istio的开发进度明显放缓，1.1版本的发布多次推迟，直到2018年结束也未能发布。在1.0版本发布之后的5个月时间，Istio只是以平均每个月一个Patch版本的方式陆续发布了1.0.1到1.0.5总共5个Patch版本，这些Patch版本都只有错误修复和性能改善，未带来新的特性。
 
 简单总结 Istio 2018年的发布情况：Istio在上半年通过0.5.0/0.6.0/0.7.0三个小版本陆续进行了小改，在0.8.0版本中进行了唯一一次大改，然后年中发布了2018年最重要的里程碑1.0.0版本，接着是长达5个月的修整期，最后带着迟迟未能发布1.1版本的小遗憾平淡的结束2018年。
 
-和产品演进和版本发布的平淡相比，Istio在市场和社区的接受程度方面表现非常火爆，成为2018年最热门的项目之一，也在各种技术会议上成为备受关注的技术新星。尤其在 kubernets 社区，更是被视为有望继 kubernets 成功之后成为下一个现象级产品。
+和产品演进和版本发布的平淡相比，Istio在市场和社区的接受程度方面表现非常火爆，成为2018年最热门的项目之一，也在各种技术会议上成为备受关注的技术新星。尤其在 Kubernetes社区，更是被视为有望继Kubernetes成功之后的下一个现象级产品。
 
-目前各主流云平台也纷纷提供对 Istio 的支持：
+目前各主流云平台也纷纷提供对Istio的支持：
 
-- TODO
-- GKE：作为Istio的主要推动力量，Google自然不遗余力的支持Istio。在2018年7月Istio 1.0发布之后，Google Kubernetes Engine 就提供了对Istio的支持。
-- IBM Cloud Kubernetes Service：TODO
+- NetApp：2018年9月17日宣布收购成立仅3年的云原生创业公司[Stackpoint](https://stackpoint.io/)，Stackpoint Cloud 支持创建和管理安全、多云、多region的Istio Service Mesh。
+- GKE：作为Istio的主要推动力量，Google自然不遗余力的支持Istio。在2018年7月Istio 1.0发布之后，Google Kubernetes Engine就提供了对Istio的支持。
+- IBM Cloud Kubernetes Service：Istio作为一个开源项目，IBM主要关注流量路由、版本控制和A/B测试方面，Google专注于安全和遥测（来自[IBM云计算CTO讲述Istio项目的起源、分工及目标](http://www.servicemesher.com/blog/istio-aims-to-be-the-mesh-plumbing-for-containerized-microservices/)），IBM Cloud 于 2018 年中已提供 Istio 试用。
 - Maistra：2018年9月，Red Hat的OpenShift Service Mesh技术预览版上线，基于Istio。Red Hat是Istio项目的早期采用者和贡献者，希望将Istio正式成为OpenShift平台的一部分。Red Hat为OpenShift上的Istio开始了一个技术预览计划，为现有的OpenShift Container Platform客户提供在其OpenShift集群上部署和使用Istio平台的能力，为此Red Hat创建了一个名为Maistra的社区项目。
 
-在市场一片红红火火之时，我们不得不指出，到2018年底，Istio 依然在几个关键领域上未能给出足够令人满意的答案，典型如性能、稳定性，Istio 的 1.0 版本并不是一个有足够生产强度的稳定版本。Istio在2018年交出的答案，对于对Istio抱有非常大期待的 Servicemesh 社区来说，是远远不够的。这直接导致 Istio 目前在生产落地上陷入尴尬境地：虽然试水 Istio 的公司非常多，但是真正大规模的实践很少。
+在市场一片红红火火之时，我们不得不指出，到2018年底，Istio 依然在几个关键领域上未能给出足够令人满意的答案，典型如性能、稳定性，Istio 的 1.0 版本并不是一个有足够生产强度的稳定版本。Istio在2018年交出的答案，对于对Istio抱有非常大期待的 Service Mesh 社区来说，是远远不够的。这直接导致 Istio 目前在生产落地上陷入尴尬境地：虽然试水 Istio 的公司非常多，但是真正大规模的实践很少。
 
 对 Istio 的年度总结，首先回答问题：Istio 在2018年如期发布了1.0版本，顺利完成了市场布局，扩大了己方阵营，压制了所有竞争对手。不可谓不成功，但是离社区的期待依然有非常大的距离，关键在于未能真正实现大规模普及。如何打破这一叫好不叫座的僵局，将会是 Istio 2019年面临的最大挑战。
 
@@ -63,33 +63,31 @@
 
 我们再来细看一下2018年Envoy的版本发布情况，这次我们换个特别的角度，关注一个细节：Envoy每次版本发布时，都会在Release Note中列出本版本包含的变更列表，非常细致，所以很长很长，每次都是三四页的样子。我们同时简单计算了一下每次发布包含的commit数量，整体情况如下：
 
-- 2018年5月20日，Envoy发布1.6.0版本：包含392个commits，Release Note 长达四页
-- 2018年6月21日，Envoy发布1.7.0版本：包含468个commits，Release Note 长达四页。这个版本是配套Istio 1.0版本作为 Production Ready的 Service mesh 解决方案。全面支持RBAC鉴权模型, TLS&JWT加密，网络通信安全性有极大提升。
-- 2018年10月4日，Envoy发布1.8.0版本：包含425个commits，Release Note 长达三页
-- 2018年12月21日，Envoy发布1.9.0版本：包含414个commits，Release Note 长达三页
+- 2018年5月20日，Envoy发布1.6.0版本：包含392个commit，Release Note 长达四页
+- 2018年6月21日，Envoy发布1.7.0版本：包含468个commit，Release Note 长达四页。这个版本是配套Istio 1.0版本作为 Production Ready 的 Service mesh 解决方案。全面支持RBAC鉴权模型, TLS&JWT加密，网络通信安全性有极大提升。
+- 2018年10月4日，Envoy发布1.8.0版本：包含425个commit，Release Note 长达三页
+- 2018年12月21日，Envoy发布1.9.0版本：包含414个commit，Release Note 长达三页
 
 如果有兴趣去浏览Envoy在这几次版本发布时的Release Note，就可以发现Envoy在2018年中数量惊人的各种细微改进。我们也可以简单计算一下，Envoy全年四个版本大概1800次commit，考虑到Envoy在2018年并没有大规模的架构改动和特别大的新特性支持，这些commit基本都是各种完善、改进和补充。不得不惊叹于Envoy在这种细致之处刻意打磨的精神，毕竟"细节才是魔鬼"。
 
 Envoy的稳健和成熟，在2018年带来了丰硕成果：
 
-- 被越来越多企业使用，不仅仅稳稳占据Istio官配Sidecar的位置，而且在网络代理、负载均衡器、网关等领域开始占据传统产品的领地，如nginx，kong。
-
-- 被Istio之外的多个公司的Service mesh框架项目采用，如AWS的app mesh, F5的Aspen mesh, 微软的service frabric mesh，国内包括腾讯，阿里的Dubbo Mesh。Envoy逐渐有成为service mesh的数据平面标准的趋势。
-
-- Envoy的xDS API，已经成为service mesh数据平面API的事实标准
+- 被越来越多企业使用，不仅仅稳稳占据Istio官配Sidecar的位置，而且在网络代理、负载均衡器、网关等领域开始占据传统产品的领地，如nginx、kong。
+- 被Istio之外的多个公司的service mesh框架项目采用，如AWS的App Mesh, F5的Aspen Mesh, 微软的service frabric mesh，国内包括腾讯，阿里的Dubbo Mesh。Envoy逐渐有成为service mesh的数据平面标准的趋势。
+- Envoy的xDS API，已经成为service mesh数据平面API的事实标准。
 
 Envoy在2018年的成功，还体现在社区开始出现基于Envoy的衍生产品：
 
 - Ambassador：构建于envoy之上的API Gateway，紧追着envoy的新版本，支持与Istio集成，可作为service mesh架构中的ingress gateway。
-- Gloo：基于Envoy的Hybrid App Gateway，可作为Kubernetes  ingress controler 和API gateway，来自 solo.io。
-- Rotor: Envoy的轻量级控制平面，来自Turbine Labs（由于Turbine Labs的公司变动，这个项目已经不再维护）。
-- Contour: 基于Envoy的Kubernetes Ingress Controller，来自 Heptio 公司
+- Gloo：基于Envoy的Hybrid App Gateway，可作为Kubernetes  ingress controller 和API gateway，来自 [solo.io](https://solo.io)。
+- Rotor：Envoy的轻量级控制平面，来自Turbine Labs（由于Turbine Labs的公司变动，这个项目已经不再维护）。
+- Contour：基于Envoy的Kubernetes Ingress Controller，来自 Heptio 公司
 
 在2017年的总结中，我们对Envoy的评价是：
 
 > Envoy随后收获了属于它的殊荣：
 >
-> - 2017年9月14日，Envoy加入CNCF，成为CNCF的第二个Service Mesh项目
+> - 2017年9月14日，Envoy加入CNCF，成为CNCF的第二个Service Mesh项目。
 >
 > 可谓名至实归，水到渠成。作为一个无需承载一家公司未来的开源项目，Envoy在2017年的表现，无可挑剔。
 
