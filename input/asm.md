@@ -17,7 +17,7 @@ AMS深度集成华为云容器服务CCE(Cloud Container Engine)，一键开启�
 
 Azure Service Fabric Mesh 于2018年7月开放公测。是一个完全托管的服务，开发者可部署微服务应用程序，而无需管理虚拟机、存储或网络。开发人员察觉不到所有的群集操作。 只需上传代码，并指定所需的资源、可用性要求和资源限制即可。其中使用Envoy做智能路由管理。
 
-	![](https://blog.tomkerkhove.be/content/images/2018/07/Traffic-Routing.png)
+![](https://blog.tomkerkhove.be/content/images/2018/07/Traffic-Routing.png)
 
 3	Google
 
