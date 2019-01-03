@@ -132,13 +132,14 @@ Istio关了Service Mesh的门，一年摸索和碰壁之后，Linkerd2发现了S
 
 ### 其他产品
 
-除了Istio、Envoy和Linkerd系列这些主要竞争者之外，Service Mesh 市场陆陆续续还有其他的一些公司参与：
+除了Istio、Envoy和Linkerd系列这些主要竞争者之外，Service Mesh市场陆陆续续还有其他的一些公司参与：
 
-- Nginmesh：来自大名鼎鼎的nginx，在2017年9月nginx对外宣布了这一产品，是一款适配 Istio 的 service mesh 方案，使用 NGINX 作为 sidecar 替换 Envoy。但nginx在Nginmesh上的态度摇摆不定：在2017年下半年发布了3个小版本之后就停止开发。2018年重新启动，接连发了几个小版本，但是在2018年7月发布0.7.1版本之后，再次停止开发。
-- Consul Connet：Consul来自HashiCorp公司，主要功能是服务注册和服务发现，基于Golang和Raft协议。在2018年6月26日发布的Consul 1.2版本中，提供了新的Connect功能，能够将现有的Consul集群自动转变为Service Mesh。亮点是可以提供自动的双向TLS加密通信以及基于唯一标识的权限控制。
-- kong：在2017年就有传闻说kong有意service mesh，但一直不见kong的明确动作。在2018年9月，kong宣布1.0发布之后kong将转型为服务控制平台，支持Service Mesh。关于kong到底会不会投身service mesh的悬念也就一直贯穿整个2018年度，直到12月21日，kong 1.0 GA发布时才明确给出：kong可以部署为独立的service mesh proxy，开箱即用的提供service mesh的关键功能，并集成有 Prometheus, Zipkin，支持健康检查，金丝雀发布和蓝绿部署等。
-- AWS App Mesh：AWS APP Mesh 是 AWS 今年在 re:Invent 2018 大会上发布的一款新服务，旨在解决在 AWS 上运行的微服务的监控和控制问题。它主要标准化了微服务之间的通信流程，为用户提供了端到端的可视化界面，并且帮助用户应用实现高可用。App Mesh 使用开源的 Envoy 作为网络代理，这也使得它可以兼容一些开源的微服务监控工具。用户可以在 AWS ECS 和 Amazon EKS 上使用 App Mesh。从官网放出的流程图可以看出，App Mesh 是对标 Istio。目前App Mesh提供公开预览。
-- Aspen Mesh：来自大名鼎鼎的F5 Networks公司，基于Istio构建，定位企业级服务网格，口号是”Service MeshMade Easy”。Aspen Mesh项目据说启动非常之早，在2017年5月Istio发布0.1版本不久之后就开始组建团队进行开发，但是一直以来都非常低调，外界了解到的信息不多。在2018年9月，Aspen Mesh 1.0发布，基于Istio 1.0。注意这不是一个开源项目，但是可以在Aspen Mesh的官方网站上申请免费试用。
+- Nginmesh：来自大名鼎鼎的nginx，在2017年9月nginx对外宣布了这一产品，是一款适配Istio的service mesh方案，使用NGINX作为sidecar替换Envoy。但nginx在Nginmesh上的态度摇摆不定：在2017年下半年发布了3个小版本之后就停止开发。2018年重新启动，接连发了几个小版本，但是在2018年7月发布0.7.1版本之后，再次停止开发。
+- Consul Connect：Consul来自HashiCorp公司，主要功能是服务注册和服务发现，基于Golang和Raft协议。在2018年6月26日发布的Consul 1.2版本中，提供了新的Connect功能，能够将现有的Consul集群自动转变为Service Mesh。亮点是可以提供自动的双向TLS加密通信以及基于唯一标识的权限控制。
+- kong：在2017年就有传闻说kong有意service mesh，但一直不见kong的明确动作。在2018年9月，kong宣布1.0发布之后kong将转型为服务控制平台，支持Service Mesh。关于kong到底会不会投身service mesh的悬念也就一直贯穿整个2018年度，直到12月21日，kong 1.0 GA发布时才明确给出：kong可以部署为独立的service mesh proxy，开箱即用的提供service mesh的关键功能，并集成有 Prometheus、Zipkin，支持健康检查，金丝雀发布和蓝绿部署等。
+- AWS App Mesh：AWS APP Mesh是AWS今年在re:Invent 2018大会上发布的一款新服务，旨在解决在AWS上运行的微服务的监控和控制问题。它主要标准化了微服务之间的通信流程，为用户提供了端到端的可视化界面，并且帮助用户应用实现高可用。App Mesh 使用开源的 Envoy 作为网络代理，这也使得它可以兼容一些开源的微服务监控工具。用户可以在 AWS ECS 和 Amazon EKS 上使用 App Mesh。从官网放出的流程图可以看出，App Mesh 是对标 Istio。目前App Mesh提供公开预览。
+- Aspen Mesh：来自大名鼎鼎的F5 Networks公司，基于Istio构建，定位企业级服务网格，口号是”Service Mesh Made Easy”。Aspen Mesh项目据说启动非常之早，在2017年5月Istio发布0.1版本不久之后就开始组建团队进行开发，但是一直以来都非常低调，外界了解到的信息不多。在2018年9月，Aspen Mesh 1.0发布，基于Istio 1.0。注意这不是一个开源项目，但是可以在Aspen Mesh的官方网站上申请免费试用。
+- SuperGloo：这是由Idit Lavine发起的创业公司solo.io的一个开源项目，作为一款服务网格编排平台，目前可以管理Consul、Linkerd和Istio，SuperGloo的目标是在降低服务网格的复杂性的同时最大化采纳服务网格的收益，SuperGloo帮助用户快速获得服务网格的经验，接管服务网格中的一些关键功能，统一了Ingress 流量（南北向）和网格流量（东西向）的管理，为自由组合任何服务网格和Ingress打开了大门。
 
 从社区的角度，我们希望有更多的参与者进Service Mesh市场，以推动Service Mesh的健康发展。但是实际情况是，在Istio的光辉之下，新晋产品的发展前景都不太客观，是和Istio全面对抗？还是另辟蹊径寻找适合自己的生存空间？是每个产品都要面对的问题。
 
