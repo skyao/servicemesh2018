@@ -51,7 +51,7 @@ Envoy的衍生产品：
 
 国内的Service Mesh产品：
 
-- [SOFAMesh和SOFAMosn](input/sofamosn.md)：蚂蚁金服的Service Mesh解决方案
+- [SOFAMesh和SOFAMosn](input/sofamesh.md)：蚂蚁金服的Service Mesh解决方案
 - [Motan Mesh](input/motanmesh.md)：新浪微博的ServiceMesh产品
 - [Dubbo Mesh](input/dubbomesh.md)：阿里Dubbo的Service Mesh方案
 - [Mesher](input/mesher.md)：华为CSE Mesher的开源产品
