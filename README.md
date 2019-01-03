@@ -23,7 +23,7 @@
 国外部分，目前主要的service mesh产品：
 
 - [Istio](input/istio.md)：来自Google/IBM/Lyft，目前最主流的Service Mesh项目
-- [Istioi平台支持](input/istio-platform.md)：对Istio提供支持的各主流云平台介绍
+- [Istio平台支持](input/istio-platform.md)：对Istio提供支持的各主流云平台介绍
 - [Envoy](input/envoy.md)：来自Lyft的数据平面，也是Istio默认的数据平面
 - [Conduit](input/conduit.md)：来自Buoyant，已经转为Linkerd2
 - [Linkerd](input/linkerd.md)：来自Buoyant，业界第一个Service Mesh项目
@@ -41,6 +41,7 @@
 
 - [Cillium](input/cillium.md)：可以和Istio/Envoy一起使用的网络解决方案
 - [Kiali](input/kiali.md)：Istio的控制台UI
+- [SuperGloo](input/supergloo.md)：服务网格编排平台
 
 Envoy的衍生产品：
 
