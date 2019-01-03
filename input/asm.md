@@ -5,13 +5,13 @@
 
 2018年8月28日,华为云中国行上成都站上,宣布作为国内首家推出了Istio服务网格产品对外发布,并正式公测。
 
-（TODO图 ASM）
+![]（images/huawei-asm-arch.png）
 
 AMS深度集成华为云容器服务CCE(Cloud Container Engine)，一键开启即可提供非侵入的智能流量治理解决方案。包括负载均衡、熔端、限流等多种治理能力。内置金丝雀、蓝绿等多种灰度发布流程，提供一站式自动化的发布管理。基于无侵入的监控数据采集，深度整合华为云APM能力，提供实时流量拓扑、调用链等服务性能监控和运行诊断，构建全景的服务运行视图。
 
 截止2018-12-24，华为云Istio团队在Istio社区累计Pull Requests (PRs)贡献 270条，厂商贡献排名全球第3。现有Istio社区Approver 3席，Member 6席，Contributor 若干。
 
-（TODO图 HuaweiCloud Istio contribution）
+![]（images/huawei-istio-contribution.png）
 
 2	Azure Service Fabric Mesh 
 
