@@ -145,7 +145,7 @@ Istio关了Service Mesh的门，一年摸索和碰壁之后，Linkerd2发现了S
 
 ### 小结
 
-
+Envoy和Linkerd都可以说是目前Service Mesh产品的先驱，然而在刚刚过去的2018年中，其处境差距却不啻云泥：Istio借力Envoy，凭借其强大的号召能力和优秀的总体设计，干净利落的将Linkerd打落尘埃。然而Istio在占领Service Mesh的注意力聚焦之后，在整个2018年中，其发布进度表现出令人印象深刻的拖沓。Service Mesh这一技术的广阔前景，加上Istio的疲弱表现，吸引了更多对此技术具有强烈需求或相关技术储备的竞争者出现，除了 AWS F5这样的公有云方案，以及Consul、Kong等同类软件解决方案，还出现了Solo.io这样的更加激进的跨云方案加入战团。Service Mesh技术的浪潮已将业界席卷其中，然而这一年来，角逐者有增无减，2019年里，Istio仍是关键——除非Istio能够做出符合顶尖项目的水准，否则，Service Mesh技术很可能会以多极化、市场细分的形式落地。
 
 ## 国内篇
 
