@@ -1,7 +1,7 @@
 
 1	ASM
 
-华为云应用网格服务ASM(Application Service Mesh)基于Istio构建。提供高性能、高可靠性、高可维护性的企业级网格服务平台。
+华为云应用服务网格ASM(Application Service Mesh)基于Istio构建。提供高性能、高可靠性、高可维护性的企业级网格服务平台。
 
 2018年8月28日,华为云中国行上成都站上,宣布作为国内首家推出了Istio服务网格产品对外发布,并正式公测。
 
