@@ -233,13 +233,13 @@ WeiboMesh 是微博内部跨语言服务化解决方案，目前已经在微博�
 - 支持了基于 MC 协议的 CacheService，在资源服务化方面迈出重要一步
 - 提供了 Python、C++ 语言的支持
 
-### 华为Mesher
+### 华为Mesher与ASM
 
 Mesher基于华为开源的ServiceComb，ServiceComb是一个java与go语言的微服务编程框架， 在2017年底加入的Mesher补充完善了微服务解决方案。
 
-在生产中得到了验证后， 华为在8月份开源了Mesher，以完善ServiceComb开源生态。
+在生产中得到了验证后， 华为在8月份开源了Mesher，以完善ServiceComb开源生态。从发展目标来看，Mesher并不只支持Kubernetes， 而是支持任意的基础设施，包括容器，虚拟机等。并且让ServiceComb支持异构的注册中心管理，可以统一的在一个service center中发现不同基础设施，不同数据中心的微服务，以此来更好的支持混合云场景。
 
-除了Mesher之外，华为也在 Istio 生态上投入了很大力量，并基于 Istio 发布了自己的ASM（Application Service Mesh），基于Istio构建，集成华为云，对外推出了Istio服务网格产品，并正式公测。
+除了Mesher之外，华为也在 Istio 生态上投入了很大力量，组建了华为云Istio团队，并基于 Istio 发布了自己的ASM（Application Service Mesh），ASM深度集成华为云容器服务CCE(Cloud Container Engine)，提供非侵入的智能流量治理解决方案，包括负载均衡、熔端、限流等多种治理能力。ASM于2018年8月对外公测。
 
 ### 阿里Dubbo Mesh
 
@@ -284,7 +284,7 @@ Golang在各方面比较均衡，成为c/c++之外数据平面的最佳编程语
 在控制平面上，也是三种流派：
 
 1. 自行开发，如新浪微博WeiboMesh、华为Mesher
-2. 依托Istio进行扩展和订制，如蚂蚁金服SOFAMesh，华为ASF
+2. 依托Istio进行扩展和订制，如蚂蚁金服SOFAMesh，华为ASM
 3. 只重用 Istio 的 Pilot 组件，将 Pilot 从 Istio 中剥离出来配合 Envoy 使用，弃用 Mixer 和 Citadel。如腾讯Tencent Service Mesh、阿里Dubbo Mesh。这个选项的存在，一方面和国内 Kubernetes 普及程度不高而 Istio 目前基本绑定 Kubernetes 平台有关，另一方面也是对 Istio 中 Mixer、Citadel 两大组件的质疑。
 
 2018年国内 Service Mesh 的发展情况，总体上说是多方参与，各种落地和探索，技术社区反应热烈，对于一个新兴技术而言已经是非常理想的状态。当然受限于 Service Mesh 的发展阶段，目前还远没有达到全面普及的程度，还有待于当前 Service Mesh 产品的进一步成熟与完善。
