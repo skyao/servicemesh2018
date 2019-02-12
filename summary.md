@@ -40,14 +40,14 @@
 
 简单总结 Istio 2018年的发布情况：Istio在上半年通过0.5.0/0.6.0/0.7.0三个小版本陆续进行了小改，在0.8.0版本中进行了唯一一次大改，然后年中发布了2018年最重要的里程碑1.0.0版本，接着是长达6个月的修整期，最后带着迟迟未能发布1.1版本的小遗憾平淡的结束2018年。
 
-和产品演进和版本发布的平淡相比，Istio在市场和社区的接受程度方面表现非常火爆，成为2018年最热门的项目之一，也在各种技术会议上成为备受关注的技术新星。尤其在 Kubernetes社区，更是被视为有望继Kubernetes成功之后的下一个现象级产品。
+与产品演进和版本发布的平淡相比，Istio在市场和社区的接受程度方面表现非常火爆，成为2018年最热门的项目之一，也在各种技术会议上成为备受关注的技术新星。尤其在 Kubernetes社区，更是被视为有望继Kubernetes成功之后的下一个现象级产品。
 
 目前各主流云平台也纷纷提供对Istio的支持：
 
 - NetApp：2018年9月17日宣布收购成立仅3年的云原生创业公司[Stackpoint](https://stackpoint.io/)，Stackpoint Cloud 支持创建和管理安全、多云、多region的Istio Service Mesh。
 - GKE：作为Istio的主要推动力量，Google自然不遗余力的支持Istio。在2018年7月Istio 1.0发布之后，Google Kubernetes Engine就提供了对Istio的支持。
 - IBM Cloud Kubernetes Service：Istio作为一个开源项目，IBM主要关注流量路由、版本控制和A/B测试方面，Google专注于安全和遥测（来自[IBM云计算CTO讲述Istio项目的起源、分工及目标](http://www.servicemesher.com/blog/istio-aims-to-be-the-mesh-plumbing-for-containerized-microservices/)），IBM Cloud 于 2018 年中已提供 Istio 试用。
-- Maistra：2018年9月，Red Hat的OpenShift Service Mesh技术预览版上线，基于Istio。Red Hat是Istio项目的早期采用者和贡献者，希望将Istio正式成为OpenShift平台的一部分。Red Hat为OpenShift上的Istio开始了一个技术预览计划，为现有的OpenShift Container Platform客户提供在其OpenShift集群上部署和使用Istio平台的能力，为此Red Hat创建了一个名为Maistra的社区项目。
+- [Maistra](https://maistra.io/)：2018年9月，Red Hat的OpenShift Service Mesh技术预览版上线，基于Istio。Red Hat是Istio项目的早期采用者和贡献者，希望将Istio正式成为OpenShift平台的一部分。Red Hat为OpenShift上的Istio开始了一个技术预览计划，为现有的OpenShift Container Platform客户提供在其OpenShift集群上部署和使用Istio平台的能力，为此Red Hat创建了一个名为Maistra的社区项目。
 
 在市场一片红红火火之时，我们不得不指出，到2018年底，Istio 依然在几个关键领域上未能给出足够令人满意的答案，典型如性能、稳定性，Istio 的 1.0 版本并不是一个有足够生产强度的稳定版本。Istio 在2018年交出的答案，对于对Istio抱有非常大期待的 Service Mesh 社区来说，是远远不够的。这直接导致 Istio 目前在生产落地上陷入尴尬境地：虽然试水 Istio 的公司非常多，但是真正大规模的实践很少。
 
@@ -57,7 +57,7 @@ Istio 的2018年年度总结：如期发布了1.0版本，顺利完成了市场�
 
 ### Envoy
 
-相比网红 Istio 在社区的红红火火和产品发布的疲软，另一位重量级选手 Envoy 则是完全不同的表现风格：低调，务实，稳打稳扎，堪称实力派。
+相比网红 Istio 在社区的红红火火和产品发布的疲软，另一位重量级选手 Envoy 则是完全不同的表现风格：低调，务实，稳扎稳打，堪称实力派。
 
 在2017年的总结中，我们称Envoy为"波澜不惊的Envoy"，以下这段内容援引自2017年的年度总结：
 
@@ -138,7 +138,7 @@ Linkerd的2018年，是突围的一年，作为定义Service Mesh概念的先驱
 
 - 基于Scala/JVM的数据平面，在性能和资源消耗方面，对阵基于 c++ 而且表现异常成熟稳重的 Envoy，毫无优势。在2018年针对 Linkerd 1.× 的各种性能优化无疾而终之后，答案已经很明显：Linkerd 1.× 已经不再适合继续用来作为数据平面。
 - 相对 Istio 强大的控制平面，Linkerd 1.x 在控制平面上的缺失成为关键弱点。尤其 Linkerd 1.x 晦涩难懂的 dtab 规则，面对 Envoy 的 xDS API，在设计和使用上都存在代差。
-- 而以 Linkerd 为数据平面去结合 Istio 控制平面的设想，在经过一年多的尝试后无奈的发现：这个方案根本没有市场
+- 而以 Linkerd 为数据平面去结合 Istio 控制平面的设想，在经过一年多的尝试后无奈的发现：这个方案根本没有市场。
 
 因此，合并产品线，放弃 Linkerd 1.×，将力量集中到 Conduit 这个未来方案就成为自然选择。而 Linkerd 原有的市场品牌和号召力，还有 CNCF 项目的地位也应该保留，因此，Buoyant 选择了在2018年7月，在 Conduit 发布 v0.5.0 时将 Conduit 更名为 Linkerd 2.0。
 
@@ -157,7 +157,7 @@ Linkerd 2.x 版本的目标则具有很明确的针对性：提供一个轻量�
 
 回顾2017年和2018年 Buoyant 的表现，笔者的看法是 Buoyant 的问题主要体现在对竞争对手和对自己的认知都不够清晰，导致在产品策略上接连犯错：
 
-- 在 Istio 出来之前，面对 Envoy ，Linkerd 1.× 系列的劣势就很明显，只是 Linkerd 作为市场上第一个 Service Mesh 类产品，光环太盛，遮挡了社区和客户的视线，但是 Buoyant 自己不应该迷失。面对强力竞争对手，未能及时反思并调整布局，这是 Buoyant 犯下的第一个错误。没能意识到自身的不足，导致后面在数据平面上始终被 Envoy 遥遥领先。
+- 在 Istio 出来之前，面对 Envoy，Linkerd 1.× 系列的劣势就很明显，只是 Linkerd 作为市场上第一个 Service Mesh 类产品，光环太盛，遮挡了社区和客户的视线，但是 Buoyant 自己不应该迷失。面对强力竞争对手，未能及时反思并调整布局，这是 Buoyant 犯下的第一个错误。没能意识到自身的不足，导致后面在数据平面上始终被 Envoy 遥遥领先。
 - 在 Istio 出来之后，在原有数据平面对阵 Envoy 已经存在劣势的前提下，控制平面也出现代差，还有 Google 和 IBM 站台导致原来面对 Envoy 的市场宣传和社区支持的优势也荡然无存。此时 Buoyant 就应该彻底反省并给出全新方案，但是 Buoyant 当时的选择是让 Linkerd 作为数据平面去兼容 Istio，而未能在控制平面上及时发力。
 - 2017年底，Conduit 的推出本来是一步好棋，2017年年底和2018年年初 Istio 表现糟糕，甚至有些混乱，Conduit 的推出也符合社区希望存在良性竞争的心态。然而 Conduit 的数据平面采用 Rust 语言，虽然性能表现卓越，但是过于小众，导致来自开源社区的 contributor 数量极其稀少，根本无法从社区借力。
 - 2018年，在推出 Conduit 之后，迟迟不肯放弃 Linkerd 1.×，直到2018年年中才在各种尝试无效之后最终选择放弃 Linkerd 1.×。其实这个决定，本可以在更早的时间点做出。
@@ -186,7 +186,7 @@ Linkerd 2.x 版本的目标则具有很明确的针对性：提供一个轻量�
 
 - AWS App Mesh：AWS APP Mesh是AWS今年在re:Invent 2018大会上发布的一款新服务，旨在解决在AWS上运行的微服务的监控和控制问题。它主要标准化了微服务之间的通信流程，为用户提供了端到端的可视化界面，并且帮助用户应用实现高可用。App Mesh 使用开源的 Envoy 作为网络代理，这也使得它可以兼容一些开源的微服务监控工具。用户可以在 AWS ECS 和 Amazon EKS 上使用 App Mesh。从官网放出的流程图可以看出，App Mesh 是对标 Istio。目前App Mesh提供公开预览。
 
-	总结：AWS APP Mesh 的选择，和 Buoyant 的 Linkerd 系列完全相反，选择 Envoy 作为数据平面，从而避免和 Istio 在数据平面进行竞争，毕竟 Envoy 珠玉在前，而数据平面又是最为考验技术底蕴和细节完善，费时费力。AWS APP Mesh 可以集中精力主攻控制平面，趁 Istio 还未完全成熟之时，依托AWS 完善的体系力求在 Service Mesh 领域有自己的一席之地。AWS APP Mesh 支持客户在 EC2 和 k8s 环境下同时部署应用并能实现相互访问，一旦成熟，将有可能是一个大卖点。
+	总结：AWS APP Mesh 的选择，和 Buoyant 的 Linkerd 系列完全相反，选择 Envoy 作为数据平面，从而避免和 Istio 在数据平面进行竞争，毕竟 Envoy 珠玉在前，而数据平面又是最为考验技术底蕴和细节完善，费时费力。AWS APP Mesh 可以集中精力主攻控制平面，趁 Istio 还未完全成熟之时，依托AWS 完善的体系力求在 Service Mesh 领域有自己的一席之地。AWS APP Mesh 支持客户在 EC2 和 Kubernetes 环境下同时部署应用并能实现相互访问，一旦成熟，将有可能是一个大卖点。
 
 - Aspen Mesh：来自大名鼎鼎的F5 Networks公司，基于Istio构建，定位企业级服务网格，口号是”Service Mesh Made Easy”。Aspen Mesh项目据说启动非常之早，在2017年5月Istio发布0.1版本不久之后就开始组建团队进行开发，但是一直以来都非常低调，外界了解到的信息不多。在2018年9月，Aspen Mesh 1.0发布，基于Istio 1.0。注意这不是一个开源项目，但是可以在Aspen Mesh的官方网站上申请免费试用。
 
@@ -216,16 +216,16 @@ Service Mesh技术的浪潮已将业界席卷其中，然而这一年来，角�
 
 蚂蚁金服的Service Mesh解决方案目前主要有两个产品组成：
 
-- SOFAMesh项目：蚂蚁金服 Service Mesh 的控制平面，跟随社区，Fork 自 Istio，保持同步更新。在Istio体系和框架内进行功能补充/扩展/增强/改进，立足于探索并解决 Istio 生产落地，尤其是大规模落地中遇到的实际问题，包括对各种RPC通讯协议的支持，对单进程多服务的传统SOA服务的支持。为了满足公有云上对客户提供 Service Mesh 托管服务，还提供了多租户的支持。
-- SOFAMosn项目：蚂蚁新型基础设施和中间件的底层网络通用解决方案，可以有多种产品形态，2017年底启动，基于Golang开发。在蚂蚁金服 Service Mesh 中承担数据平面的角色，和 SOFAMesh 项目配合使用，兼容 Istio 体系。此外 SOFAMosn 还将用于 Ingress / API Gateway / Serverless Function Gateway 等场景，以及Message Mesh等其他形态的Mesh，成为蚂蚁金服未来Mesh网络的核心组件。
+- [SOFAMesh](http://github.com/alipay/sofa-mesh)项目：蚂蚁金服 Service Mesh 的控制平面，跟随社区，Fork 自 Istio，保持同步更新。在Istio体系和框架内进行功能补充/扩展/增强/改进，立足于探索并解决 Istio 生产落地，尤其是大规模落地中遇到的实际问题，包括对各种RPC通讯协议的支持，对单进程多服务的传统SOA服务的支持。为了满足公有云上对客户提供 Service Mesh 托管服务，还提供了多租户的支持。
+- [SOFAMosn](http://github.com/alipay/sofa-mosn)项目：蚂蚁金服新型基础设施和中间件的底层网络通用解决方案，可以有多种产品形态，2017年底启动，基于Golang开发。在蚂蚁金服 Service Mesh 中承担数据平面的角色，和 SOFAMesh 项目配合使用，兼容 Istio 体系。此外 SOFAMosn 还将用于 Ingress / API Gateway / Serverless Function Gateway 等场景，以及Message Mesh等其他形态的Mesh，成为蚂蚁金服未来Mesh网络的核心组件。
 
-以上两个产品都已经于2018年7月在 github 开源。
+以上两个产品都已经于2018年7月在 GitHub 开源。
 
 经过2018年的开发和小规模落地使用，目前 SOFAMosn 和 SOFAMesh 项目都已经基本成型，2019年即将在蚂蚁金服大规模落地，支撑蚂蚁金服上云的战略目标。其中SOFAMesh还将在蚂蚁金融云上以 Service Mesh 托管服务的形式为客户提供支持，充分结合云和Service Mesh的优势。
 
 ### 新浪微博WeiboMesh
 
-WeiboMesh 是微博内部跨语言服务化解决方案，目前已经在微博多条业务线上得到广泛使用，这其中不乏 热搜、话题等核心项目。 2018 年 WeiboMesh 核心方向是从内部场景提炼实际业务需求，推动大规模业务低成本接入 Mesh 体系，其主要工作包括：
+WeiboMesh 是微博内部跨语言服务化解决方案，目前已经在微博多条业务线上得到广泛使用，这其中不乏热搜、话题等核心项目。 2018 年 WeiboMesh 核心方向是从内部场景提炼实际业务需求，推动大规模业务低成本接入 Mesh 体系，其主要工作包括：
 
 - 强化了管理端口，提供了基于不同维度的 Mesh 管理方式（维护调试、服务管理/Mesh 注册中心等）
 - 优化，并丰富了 Mesh 控制平面的功能，提供了 Tracing、熔断，限流等功能
@@ -245,8 +245,8 @@ Mesher基于华为开源的ServiceComb，ServiceComb是一个java与go语言的�
 
 Dubbo Mesh为阿里自研的服务化框架Dubbo的Service Mesh组件，其技术选型为：
 
-- 数据平面选型Envoy。 Envoy所定义的、被广泛接受的xDS协议能够很好地体现了Dubbo对Service Mesh具有“规范化”作用的理解。
-- 控制平面选型Istio的Pilot组件。 以Istio目前的架构设计和结合阿里巴巴集团已有软件资产的现状，其整体并不足以承载起对Service Mesh的要求。然而，其中的Pilot组件的平台抽象设计、对Envoy xDS协议的实现能很好地加速Service Mesh在阿里巴巴集团生产环境的落地。
+- 数据平面选型Envoy。Envoy所定义的、被广泛接受的xDS协议能够很好地体现了Dubbo对Service Mesh具有“规范化”作用的理解。
+- 控制平面选型Istio的Pilot组件。以Istio目前的架构设计和结合阿里巴巴集团已有软件资产的现状，其整体并不足以承载起对Service Mesh的要求。然而，其中的Pilot组件的平台抽象设计、对Envoy xDS协议的实现能很好地加速Service Mesh在阿里巴巴集团生产环境的落地。
 
 接下来，Dubbo Mesh将进一步组合阿里巴巴集团已开源出来的各种组件去增强其监管控能力。比如，通过将Sentinel的能力纳入到Dubbo Mesh，能很好地补全限流、降级和熔断的能力。
 
@@ -267,7 +267,7 @@ Dubbo Mesh为阿里自研的服务化框架Dubbo的Service Mesh组件，其技�
 
 从上面的介绍可以看到，国内在 Service Mesh 领域上和国际靠的很近。
 
-技术社区方面，在Service Mesh诞生不久，国内就出现了 Service Mesh 的爱好者、交流社区、布道师，诞生了 ServiceMesher 这样专业而专注的垂直技术社区，极大的促进了 Service Mesh 技术在国内技术社区的普及和发展。以InfoQ为代表的技术媒体也对 Service Mesh 这一新兴技术给予了高度关注，在 QCon/ArchSummit 等国内顶级技术峰会上经常可以看到 Service Mesh 相关的演讲主题。
+技术社区方面，在Service Mesh诞生不久，国内就出现了 Service Mesh 的爱好者、交流社区、布道师，诞生了 [ServiceMesher](http://www.servicemesher.com) 这样专业而专注的垂直技术社区，极大的促进了 Service Mesh 技术在国内技术社区的普及和发展。以InfoQ为代表的技术媒体也对 Service Mesh 这一新兴技术给予了高度关注，在 QCon/ArchSummit 等国内顶级技术峰会上经常可以看到 Service Mesh 相关的演讲主题。
 
 在产品方面，以蚂蚁金服、新浪微博、华为、阿里、腾讯等公司为代表的国内互联网公司，以多种方式给出了符合自身特点的 Service Mesh 产品，思路和打法各有不同。
 
@@ -285,7 +285,7 @@ Golang在各方面比较均衡，成为c/c++之外数据平面的最佳编程语
 
 1. 自行开发，如新浪微博WeiboMesh、华为Mesher
 2. 依托Istio进行扩展和订制，如蚂蚁金服SOFAMesh，华为ASF
-3. 只重用 Istio 的 Pilot 组件，将 Pilot 从 Istio 中剥离出来配合 Envoy 使用，弃用 Mixer 和 Citadel。如腾讯Tencent Service Mesh、阿里Dubbo Mesh。这个选项的存在，一方面和国内k8s普及程度不高而 Istio 目前基本绑定 k8s 平台有关，另一方面也是对 Istio 中 Mixer、Citadel 两大组件的质疑。
+3. 只重用 Istio 的 Pilot 组件，将 Pilot 从 Istio 中剥离出来配合 Envoy 使用，弃用 Mixer 和 Citadel。如腾讯Tencent Service Mesh、阿里Dubbo Mesh。这个选项的存在，一方面和国内 Kubernetes 普及程度不高而 Istio 目前基本绑定 Kubernetes 平台有关，另一方面也是对 Istio 中 Mixer、Citadel 两大组件的质疑。
 
 2018年国内 Service Mesh 的发展情况，总体上说是多方参与，各种落地和探索，技术社区反应热烈，对于一个新兴技术而言已经是非常理想的状态。当然受限于 Service Mesh 的发展阶段，目前还远没有达到全面普及的程度，还有待于当前 Service Mesh 产品的进一步成熟与完善。
 
