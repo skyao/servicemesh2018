@@ -241,7 +241,7 @@ Mesher基于华为开源的ServiceComb，ServiceComb是一个java与go语言的�
 
 在生产中得到了验证后， 华为在8月份开源了Mesher，以完善ServiceComb开源生态。从发展目标来看，Mesher并不只支持Kubernetes， 而是支持任意的基础设施，包括容器，虚拟机等。并且让ServiceComb支持异构的注册中心管理，可以统一的在一个service center中发现不同基础设施，不同数据中心的微服务，以此来更好的支持混合云场景。
 
-除了Mesher之外，华为也在 Istio 生态上投入了很大力量，组建了华为云Istio团队，并基于 Istio 发布了自己的ASM（Application Service Mesh），ASM深度集成华为云容器服务CCE(Cloud Container Engine)，提供非侵入的智能流量治理解决方案，包括负载均衡、熔端、限流等多种治理能力。ASM于2018年8月对外公测。
+华为云 Istio 团队在 Istio 生态上投入了很大力量，并基于 Istio 发布了自己的ASM（Application Service Mesh），ASM深度集成华为云容器服务CCE(Cloud Container Engine)，提供非侵入的智能流量治理解决方案，包括负载均衡、熔端、限流等多种治理能力。内置金丝雀、蓝绿等多种灰度发布流程，提供一站式自动化的发布管理。基于无侵入的监控数据采集，整合华为云APM能力，提供实时流量拓扑、调用链等服务性能监控和运行诊断，构建全景的服务运行视图。ASM于2018年8月对外公测。
 
 ### 阿里Dubbo Mesh
 
@@ -256,7 +256,13 @@ Dubbo Mesh为阿里自研的服务化框架Dubbo的Service Mesh组件，其技�
 
 腾讯service mesh属于腾讯内部的下一代微服务技术中台，在腾讯内部业务如广告平台等得到充分的验证，并随腾讯云微服务平台（TSF）于2018年6月上线内测，随后在9月集成了Istio 1.0并发布了里程碑版本，产品将于2019年1月全面公测。
 
-腾讯service mesh产品基于开源istio及envoy进行构建，并在此之上进行扩展支持多计算平台集成、多服务框架互通、分布式服务寻址等能力。
+产品技术选型上，控制面选用了集百家之长的istio，数据面则选用了成熟稳定的高性能边缘代理envoy。
+
+在开源之上，腾讯云根据业务现状及客户诉求做了以下扩展及改造：
+
+* 支持多计算平台集成。能支持虚拟机，物理机的服务自动接入Service Mesh
+* 支持多服务框架互通。能同时支持SpringCloud与Service Mesh业务进行互通
+* 支持分布式服务寻址。业务可以通过服务名直接接入Service Mesh框架
 
 ### Service Mesh衍生产品
 
